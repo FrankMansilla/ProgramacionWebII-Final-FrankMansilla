@@ -1,0 +1,81 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: #ffff;
+	color: #1d1d1d;
+	font-size: 24px;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 100px;
+	margin: 40px auto 100px auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
+	justify-content: center;
+}
+
+.contenedor_actores {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 1fr; /* Divide en dos filas: una para el nombre del actor y otra para la biografía y películas */
+	gap: 20px;
+}
+
+.nombreActor {
+	font-size: 30px; /* Modifica el tamaño del nombre del actor */
+}
+
+.actorContenedor {
+	display: flex;
+	align-items: center; /* Alinear los elementos verticalmente */
+}
+
+.actorContenedor img {
+	max-width: 200px;
+	border-radius: 10px;
+	margin-right: 20px;
+}
+
+.biografiaContenedor {
+	font-size: 16px; /* Modifica el tamaño de la biografía */
+}
+
+.peliculaxactor {
+	display: flex; /* Alinear los elementos en línea */
+	flex-direction: column; /* Alinear los elementos uno encima del otro */
+	align-items: center; /* Centrar los elementos horizontalmente */
+	margin-top: 20px;
+}
+
+.peliculasConocidasContainer {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	margin-top: 20px;
+}
+
+.peliculaConocida {
+	text-align: center;
+	font-size: 14px; /* Modifica el tamaño del texto de las películas conocidas */
+}
+
+.peliculaConocida img {
+	width: 100%;
+	max-width: 200px;
+	height: auto;
+	border-radius: 20px;
+}
+
+.peliculaConocida p {
+	margin-top: 8px;
+}
+
+.conocidopor {
+	font-size: 20px;
+}
