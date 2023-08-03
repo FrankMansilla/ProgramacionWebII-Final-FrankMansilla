@@ -43,7 +43,7 @@ fetch(
           const peliculaElemento = document.createElement("div");
           peliculaElemento.classList.add("peliculaConocida");
 
-          // Mostrar el poster de la película
+          
           fetch(`https://api.themoviedb.org/3/search/movie?api_key=d13c9cff64cdd415463b6c8ead08c95e&query=${pelicula}`)
             .then((response) => response.json())
             .then((peliculaData) => {
@@ -59,12 +59,10 @@ fetch(
               console.log("Error al cargar el poster del actor:", error);
             });
 
-          // Mostrar el título de la película
+          
           const tituloPelicula = document.createElement("p");
           tituloPelicula.textContent = pelicula;
           peliculaElemento.appendChild(tituloPelicula);
-
-          // Agregar la película al contenedor de películas conocidas
           peliculasConocidasContainer.appendChild(peliculaElemento);
         });
       } else {

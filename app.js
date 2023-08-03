@@ -17,7 +17,7 @@ const cargarPopular = async () => {
 
         peliculasConocidas = peliculasConocidas.slice(0, -2);
 
-        // Crear el elemento HTML y mostrarlo
+        
         actorHTML += `
           <div class="actor">
             <a href="actor.html?id=${actor.id}&known_for=${encodeURIComponent(peliculasConocidas)}">
